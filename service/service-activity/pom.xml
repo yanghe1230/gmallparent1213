@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>service</artifactId>
+        <groupId>com.atguigu.gmall1213</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>service-activity</artifactId>
+
+    <dependencies>
+<!--        谁秒杀的-->
+        <dependency>
+            <groupId>com.atguigu.gmall1213</groupId>
+            <artifactId>service-user-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+<!--        获取秒杀的商品信息-->
+        <dependency>
+            <groupId>com.atguigu.gmall1213</groupId>
+            <artifactId>service-product-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+<!--            将秒杀的商品放入订单-->
+            <groupId>com.atguigu.gmall1213</groupId>
+            <artifactId>service-order-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+<!--        将用户秒杀的信息放入mq中-->
+        <dependency>
+            <groupId>com.atguigu.gmall1213</groupId>
+            <artifactId>rabbit-util</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.atguigu.gmall1213</groupId>-->
+<!--            <artifactId>service-util</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+    </dependencies>
+
+
+</project>
